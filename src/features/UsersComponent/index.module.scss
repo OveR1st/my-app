@@ -6,7 +6,7 @@
   margin: 50px auto;
   padding: 0 16px;
   color: black;
-  background-color: #fff;
+  background-color: var(--secondary);
 }
 
 /**
@@ -33,5 +33,5 @@
 
 .moreBtn {
   width: max-content;
-  background-color: #7f7474;
+  background-color: var(--tertiary);
 }

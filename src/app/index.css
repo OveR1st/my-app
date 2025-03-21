@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
+  background-color: var(--primary);
 }
 
 :root {
@@ -11,14 +12,20 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: #eee;
+  --primary: #eee;
+  --secondary: #fff;
+  --tertiary: #7f7474;
+  --border: #999;
+  --quaternary: #ccc;
+}
+html {
+  background-color: var(--secondary);
 }
 
 body {
