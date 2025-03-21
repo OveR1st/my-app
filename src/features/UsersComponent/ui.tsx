@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from 'react';
+import clsx from 'clsx';
 import { IUser } from '~entities/userModel/model/types';
 import { useUserStore } from '~entities/userModel/model/store';
 import { Button } from '~shared/ui';
-import clsx from 'clsx';
 
 import styles from './index.module.scss';
 
@@ -34,6 +34,7 @@ const UserItem: FC<{ user: IUser }> = ({ user }) => {
   const showMoreToggler = () => {
     serIsMore(!isMore);
   };
+
   return (
     <div className={styles.userItemContainer}>
       <span>{name}</span>
