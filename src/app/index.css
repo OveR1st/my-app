@@ -23,6 +23,7 @@
   --tertiary: #7f7474;
   --border: #999;
   --quaternary: #ccc;
+  --text-dark: black;
 }
 html {
   background-color: var(--secondary);
