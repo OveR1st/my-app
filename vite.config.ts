@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~widgets': '/src/widgets',
+      '~entities': '/src/entities',
       '~features': '/src/features',
       '~shared': '/src/shared',
     },

@@ -1,15 +1,10 @@
 import { FC, useEffect, useState } from 'react';
 import styles from './index.module.scss';
 import { Button } from '~shared/ui';
+import { IUser } from '~entities/userModel/model/types';
+import { useUserStore } from '~entities/userModel/model/store';
 
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  phone: string;
-}
-
-const UserItem: FC<{ user: User }> = ({ user }) => {
+const UserItem: FC<{ user: IUser }> = ({ user }) => {
   const { name, email, phone } = user;
 
   const [isMore, serIsMore] = useState(false);
@@ -33,12 +28,10 @@ const UserItem: FC<{ user: User }> = ({ user }) => {
 };
 
 export const UsersComponent = () => {
-  const [users, setUsers] = useState<User[]>([]);
+  const { users, fetchUsers } = useUserStore();
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then((res) => res.json())
-      .then(setUsers);
+    fetchUsers();
   }, []);
 
   return (
