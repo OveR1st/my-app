@@ -7,6 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "~shared": "/src/shared",
+      "~widgets": "/src/widgets",
     },
   },
 })

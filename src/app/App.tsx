@@ -1,15 +1,14 @@
-
-import { Footer, Header } from '~shared/ui'
+import { FooterWidget, HeaderWidget } from '~widgets';
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header />
-      <Footer />
+      <HeaderWidget />
+      <FooterWidget />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
