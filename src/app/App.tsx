@@ -1,11 +1,11 @@
-import { FooterWidget, HeaderWidget } from '~widgets';
+import { FooterWidget, HeaderWidget, MainWidget, SidebarWidget } from '~widgets';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
       <HeaderWidget />
+      <MainWidget />
+      <SidebarWidget />
       <FooterWidget />
     </>
   );
