@@ -16,13 +16,17 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  border-radius: 50px;
   padding: 20px;
+  border-bottom: 1px solid;
+
+  &:last-child {
+    border: none;
+  }
 }
 
 .moreInfo {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
   transition: all 0.25s ease-in-out;
   opacity: 0;
 }
@@ -34,4 +38,5 @@
 .moreBtn {
   width: max-content;
   background-color: var(--tertiary);
+  color: var(--secondary);
 }
